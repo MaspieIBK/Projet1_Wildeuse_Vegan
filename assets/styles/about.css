@@ -1,0 +1,36 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: #f9f9f9;
+    padding: 20px;
+
+
+
+
+}
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #096A2E ;
+    font-family: ;
+
+}
+p {
+    margin-bottom: 15PX;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
