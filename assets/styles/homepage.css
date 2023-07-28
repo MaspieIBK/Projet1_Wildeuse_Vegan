@@ -1,0 +1,178 @@
+body {
+    margin: 20px;
+    padding: 45px;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #cddbba;
+    padding: 0px 0px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  
+  nav ul li {
+    padding: 10px;
+    display: inline;
+    align-items: center;
+    float:left;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  main{
+    height: 100%;
+  }
+  
+/* Define styles for the left half */
+.bodyleft {
+    float: left; /* Float the div to the left */
+    width: 50%; /* Set the width to half of the screen */
+    height: 100%; /* Cover the full height of the screen */
+    background-color: #ffffff;
+   } /* Example background color, you can change this */
+  
+
+  .greenleft {
+    
+    width: 30%; /* Set the width to half of the screen */
+    height: 100%; /* Cover the full height of the screen */
+    background-color: #c2dbc0;
+    display: flex;
+    justify-content: center;
+    /*display: block ;
+    margin-left: auto;
+    margin-right: auto;*/
+   } /* Example background color, you can change this */
+  
+  .greenright {
+    
+    width: 30%; /* Set the width to half of the screen */
+    height: 100%; /* Cover the full height of the screen */
+    background-color: #c2dbc0;
+    display: flex;
+    justify-content: center;
+ 
+     }
+  
+  .bodyright {
+    float: right; /* Float the div to the right */
+    width: 50%; /* Set the width to half of the screen */
+    height: 100%; /* Cover the full height of the screen */
+    background-color: #ffffff; /* Example background color, you can change this */
+  }
+
+  .avacado {
+    /* Resize the image to 300px in width and 200px in height */
+    width: 300px;
+    height: auto;
+    display: block ;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.shop {
+    /* Resize the image to 300px in width and 200px in height */
+    width: 300px;
+    height: auto;
+    display: block ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titler2{
+    color: rgb(36, 190, 57);
+
+}
+.family {
+    /* Resize the image to 300px in width and 200px in height */
+    width: 300px;
+    height: auto;
+    display: block ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.divider{
+    width: 300px;
+    height: auto;
+    display: block ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cosmetique{
+  width: 300px;
+  height: auto;
+  display: block ;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trolley {
+  width: 30px;
+  height: auto;
+  display: block ;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+  align-items: flex-end;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  display: inline-block;
+  margin-right: 15px;
+  align-items: flex-end;
+}
+
+.footer-content ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-content ul li a {
+  color: #ccce6a;
+  text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
+
