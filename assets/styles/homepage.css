@@ -32,53 +32,36 @@ body {
   }
   
   nav ul li a:hover {
-    background-color: #555;
+    background-color: rgb(66, 167, 76);
+  }
+  .title1{
+    color: rgb(66, 167, 76);
+
   }
   
   main{
     height: 100%;
   }
   
-/* Define styles for the left half */
+
 .bodyleft {
-    float: left; /* Float the div to the left */
-    width: 50%; /* Set the width to half of the screen */
-    height: 100%; /* Cover the full height of the screen */
+    float: left; 
+    width: 50%; 
+    height: 100%; 
     background-color: #ffffff;
-   } /* Example background color, you can change this */
+   } 
   
 
-  .greenleft {
-    
-    width: 30%; /* Set the width to half of the screen */
-    height: 100%; /* Cover the full height of the screen */
-    background-color: #c2dbc0;
-    display: flex;
-    justify-content: center;
-    /*display: block ;
-    margin-left: auto;
-    margin-right: auto;*/
-   } /* Example background color, you can change this */
   
-  .greenright {
-    
-    width: 30%; /* Set the width to half of the screen */
-    height: 100%; /* Cover the full height of the screen */
-    background-color: #c2dbc0;
-    display: flex;
-    justify-content: center;
- 
-     }
   
   .bodyright {
-    float: right; /* Float the div to the right */
-    width: 50%; /* Set the width to half of the screen */
-    height: 100%; /* Cover the full height of the screen */
-    background-color: #ffffff; /* Example background color, you can change this */
+    float: right; 
+    width: 50%; 
+    height: 100%; 
+    background-color: #ffffff; 
   }
 
   .avacado {
-    /* Resize the image to 300px in width and 200px in height */
     width: 300px;
     height: auto;
     display: block ;
@@ -88,27 +71,30 @@ body {
     
 }
 .shop {
-    /* Resize the image to 300px in width and 200px in height */
     width: 300px;
     height: auto;
     display: block ;
     margin-left: auto;
     margin-right: auto;
 }
-.titler2{
-    color: rgb(36, 190, 57);
+.titler2 a{
+    color: rgb(66, 167, 76);
+    text-decoration: none;
+
 
 }
+.buy a{
+  color: rgb(66, 167, 76);
+  text-decoration: none;
+}
+
 .family {
-    /* Resize the image to 300px in width and 200px in height */
     width: 300px;
     height: auto;
-    display: block ;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 .divider{
     width: 300px;
@@ -126,53 +112,82 @@ body {
   margin-right: auto;
 }
 
-.trolley {
-  width: 30px;
+/* Add these styles to your existing CSS */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
   height: auto;
-  display: block ;
-  margin-left: auto;
-  margin-right: 100px;
 }
 
 .footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
-  text-align: center;
+ 
 }
 
 .footer-content {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 200px;
+  margin: auto;
 }
 
 .footer-content p {
+  max-width: 300px;
   margin: 0;
   align-items: flex-end;
 }
 
 .footer-content ul {
+  max-width: 150px;
   list-style: none;
   padding: 0;
 }
 
 .footer-content ul li {
+  max-width: 200px;
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 150px;
   align-items: flex-end;
 }
 
 .footer-content ul li:last-child {
+  max-width: 200px;
   margin-right: 0;
 }
 
 .footer-content ul li a {
+  max-width: 200px;
   color: #ccce6a;
   text-decoration: none;
 }
 
 .footer-content ul li a:hover {
+  max-width: 200px;
   text-decoration: underline;
 }
-
-
+@media screen and (max-width: 768px) {
+  .bodyleft,
+  .bodyright {
+    float: none; 
+    width: 100%; 
+    height: auto; 
+    background-color: #ffffff;
+  }
+  .bodyleft,
+  .bodyright {
+    text-align: center;
+  }
+  .bodyleft {
+    margin-bottom: 20px;
+  }
+}
