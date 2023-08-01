@@ -1,0 +1,81 @@
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #32620E;
+
+}
+
+p1 {
+  background-color: #F3FADC;
+  display: flex;
+  font-size: 25px ;
+  text-align: center;
+
+}
+
+header h1{
+  background-color: #F3FADC;
+  color: #6AC66B;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.img-cookies {
+  margin-top: 20px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  font-size: 15px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #32620E;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .content{
+  display: flex;
+}
+
+.main .content .card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main .content .card .right{
+  display: flex;
+  flex: 0 0 30%;
+  padding: 40px;
+  color: #764640;
+  font-size: 25px;
+  text-align: center;
+}
+
+main .content .card .left{
+  flex: 0 0 70%;
+}
+
+.main .content .card .left img{
+  height: 20rem;
+  width: 30rem;
+  margin-top: 3px;
+  margin-left: 350px;
+}
+
+/*.img-buddha bowl{
+  float: left;
+}*/
