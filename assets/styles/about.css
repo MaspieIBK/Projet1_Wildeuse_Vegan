@@ -1,0 +1,71 @@
+/* Réinitialisation des styles par défaut */
+body, h1,p {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.text-rectangle{
+    border: 2px solid #C3DCD0;
+    padding: 30px;
+    background-color: #C3DCD0;
+    width: 1400px;
+    text-align: justify;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: #f9f9f9;
+    padding: 20px;
+
+
+
+
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #096A2E ;
+    font-family: 'Courgette', cursive;
+
+}
+p {
+    /*margin-bottom: 15PX;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.ellipse-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.ellipse-text {
+    padding: 40px;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: #C3DCD0;
+    text-align: center;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+  }
