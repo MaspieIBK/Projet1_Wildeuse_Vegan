@@ -1,21 +1,194 @@
-@media screen and (max-width: 600px) { 
-  .card { 
-    
-    width: 100%;
-    
-  } 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-  .cards {
-    /* max-width: 100%; */
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    font-size: 1.3em;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
     align-items: center;
-  }
+}
+
+
+.header-right {
+    width: 70%;
+    display: flex;
+    padding-top: 2px;
+    display: block;
+    margin-right: auto;
+}
+
+.header-left {
+    width: 30%;
+}
+
+.header-right .search-container {
+    float: right;
+}
+
+.header-right .search-container input[type=text] {
+    text-indent: -999px;
+    padding: 6px 9px;
+    border: 1.5px solid rgb(92, 154, 92);
+    border-radius: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: cursive;
+    height: 25px;
+    width: 90px;
+    /* margin: 12px 10px 0px -36px; */
+}
+
+.header-right .search-container button {
+    padding: 6px 9px;
+    margin-top: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin: 8px 8px 0px -36px;
+}
+
+.header-right .list {
+    list-style: none;
+    width: 100%;
+}
+
+.header-right .list a {
+    color: rgb(92, 154, 92);
+    font-family: cursive;
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 50px;
+    /* padding-right: 10px; */
+}
+
+.logo {
+    /* width: 500px; */
+    /* height: 100px; */
+    margin-right: auto;
+    /* align-self: center; */
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row-reverse; */
+    width: 100%;
+}
+
+.list a:hover {
+    color: #f28320;
+}
+
+.search {
+    color: rgb(92, 154, 92);
+    font-size: 10px;
+    display: flex;
+    float: right;
+    margin-top: 5px;
+    border: 1px solid currentColor;
+    border-radius: 15px;
+    max-width: 100%;
+    display: block;
+}
+
+
+button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding-top: 2px;
+    padding: 2px;
+    color: rgb(92, 154, 92);
+    /* margin: 0;  */
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+    float: right;
+    /* margin-right: auto; */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  /* padding: 5px; */
+  /* padding-top: 30px; */
+  background-color: beige;
+  color: white;
+  min-height: 100px;
+  /* position: static; */
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  max-width: 100%;
+  /* height: 80px; */
+  margin-top: 40px;
+
+}
+
+.social {
+
+  text-align: center;
+  padding-top: 25px;
+  color: darkgreen;
+}
+
+.social a {
+  font-size: 24px;
+  color: inherit;
+  /* border: 1px solid olive; */
+  width: 50px;
+  height: 30px;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.social a:hover {
+  opacity: 0.9;
+}
+
+.copyright {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s all ease-in-out;
+  transition: all 0.3s all ease-in-out;
+  background-color: darkgreen;
 }
 
 
 h1 {
+  margin: 20px;
   text-align: center;
   font-size: 40px;
   color: #32620E;
@@ -30,6 +203,7 @@ p {
 h2{
   color: #6AC66B;
   text-align: center;
+  margin: 10px;
 }
 
 header{
@@ -46,7 +220,8 @@ header section{
 
 button {
   font-size: 25px;
-  margin: 30px;
+  font-family: 'Dancing Script', cursive;
+  margin: 60px;
   padding: 10px 20px;
   background-color: #32620E;
   border-radius: 4px;
@@ -62,7 +237,8 @@ button {
   background-color: #F3FADC;
   color: #764640;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 25px;
+  padding: 20px;
   font-style: italic;
   overflow: hidden;
   margin: 10px;
@@ -115,7 +291,7 @@ button {
 }
 
 .image7 {
-  background-image: url("assets/img/brownies-au-chocolat-plaque-blanche-grains-cafe-cuillere-bois.jpg");
+  background-image: url("/assets/img/brownies-au-chocolat-plaque-blanche-grains-cafe-cuillere-bois.jpg");
 }
 
 .image8 {
@@ -128,5 +304,105 @@ button {
   object-fit: cover;
   object-position: center;
 }
+
+@media screen and (max-width: 600px) { 
+  .card { 
+     width: 100%;
+  } 
+
+  .cards {
+    /* max-width: 100%; */
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 800px) {
+
+  .search-container {
+      display: block;
+      margin-top: 10px;
+
+  }
+
+  .hamburger {
+      display: block;
+      float: right;
+      margin: 16px;
+
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .header-right .list {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: beige;
+      /* max-width: auto; */
+      width: 100%;
+      display: flex;
+      align-items: center;
+      transition: 0.3s;
+  }
+
+  .list a {
+      margin-top: auto;
+  }
+
+
+
+  .list.active {
+      left: 0;
+
+  }
+
+  .logo {
+      width: 140%;
+      max-width: auto;
+
+  }
+
+}
+
+@media screen and (max-width: 912px) {
+  .header-right .list a {
+
+      font-size: 11px;
+      padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-right .list a {
+
+      font-size: 12px;
+      padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .header-right .list a {
+
+      font-size: 14px;
+      padding-left: 20px;
+  }
+
+}
+
 
 
