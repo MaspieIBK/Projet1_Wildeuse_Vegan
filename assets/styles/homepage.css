@@ -1,82 +1,285 @@
 body {
-    margin: 20px;
-    padding: 45px;
+    margin: 0;
+    padding: 0;
     font-family: 'Ysabeau Infant', sans-serif;
  
   }
-  
-  nav {
-    background-color: #cddbba;
-    padding: 0px 0px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .header {
     display: flex;
-    justify-content: flex-end;
-
-  }
-  
-  nav ul li {
-    padding: 10px;
-    display: inline;
+    justify-content: center;
     align-items: center;
-    float:left;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-  }
-  
-  nav ul li a:hover {
-    background-color: rgb(66, 167, 76);
-  }
-  .title1{
-    color: rgb(66, 167, 76);
-    font-family:'Ysabeau Infant', sans-serif;
+    border-bottom: 2px solid rgb(92, 154, 92);
+    padding-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    
+}
+ .header-right {
+    width: 70%;
+    display: flex;
+    padding-top: 2px;
+    display: block;
+    margin-right: auto;
+}
 
-  }
-  .titlel1{
-    font-family:'Ysabeau Infant', sans-serif; 
+ .header-left {
+    width: 30%;
+}
+
+ .header-right .search-container {
+    float: right;
+}
+
+ .header-right .search-container input[type=text] {
+    text-indent: -999px;
+    padding: 6px 9px;
+    border: 1.5px solid rgb(92, 154, 92);
+    border-radius: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: cursive;
+    height: 25px;
+    width: 90px;
+    /* margin: 12px 10px 0px -36px; */
+}
+
+ .header-right .search-container button {
+    padding: 6px 9px;
+    margin-top: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin: 8px 8px 0px -36px;
+}
+
+ .header-right .list {
+    list-style: none;
+    width: 100%;
+}
+
+ .header-right .list a {
+    color: rgb(92, 154, 92);
+    font-family: cursive;
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 50px;
+    /* padding-right: 10px; */
+}
+
+ .logo {
+    /* width: 500px; */
+    /* height: 100px; */
+    margin-right: auto;
+    /* align-self: center; */
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row-reverse; */
+    width: 100%;
+}
+
+ .list a:hover {
+    color: #f28320;
+}
+
+ .search {
+    color: rgb(92, 154, 92);
+    font-size: 10px;
+    display: flex;
+    float: right;
+    margin-top: 5px;
+    border: 1px solid currentColor;
+    border-radius: 15px;
+    max-width: 100%;
+    display: block;
+}
+ .button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding-top: 2px;
+    padding: 2px;
+    color: rgb(92, 154, 92);
+    /* margin: 0;  */
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+    float: right;
+    /* margin-right: auto; */
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s all ease-in-out;
+    transition: all 0.3s all ease-in-out;
+    background-color: darkgreen;
+}
+@media screen and (max-width: 800px) {
+
+    .search-container {
+        display: block;
+        margin-top: 10px;
+    }
+    .hamburger {
+        display: block;
+        float: right;
+        margin: 16px;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .header-right .list {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: beige;
+        /* max-width: auto; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+    }
+    .list a {
+        margin-top: auto;
+    }
+    .list.active {
+        left: 0;
+
+    }
+    .logo {
+        width: 140%;
+        max-width: auto;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .header-right .list a {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header-right .list a {
+
+        font-size: 12px;
+        padding-left: 20px;
+    }
+}
+/*@media screen and (max-width: 912px) {
+    .header-right .list a {
+
+        font-size: 11px;
+        padding-left: 10px;
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+
+      background-color: rgb(221, 241, 174);
+      color: white;
+      min-height: 100px;
+      width: 100%;
+      margin-top: 20px;
+      max-width: 100%;
+      text-align: center;
+      padding: 10px;
+      align-items: flex-end;
+  
   }
   
+  .social {
+  
+      text-align: center;
+      padding-top: 25px;
+      color: darkgreen;
+  }
+  
+  .social a {
+      font-size: 24px;
+      color: inherit;
+
+      width: 50px;
+      height: 30px;
+      margin: 0 8px;
+      opacity: 0.75;
+  }
+  
+  .social a:hover {
+      opacity: 0.9;
+  }
+  
+  .copyright {
+      margin-top: 5px;
+      text-align: center;
+      font-size: 15px;
+  }
+}*/
+  .title1{
+    padding:25px;
+    color: rgb(66, 167, 76);
+    font-family:'Dancing Script', cursive;
+    font-size:xxx-large;
+  }
+  .titlel1 {
+    font-family:'Dancing Script', cursive; 
+  }
   main{
     height: 100%;
   }
-  
-
+  .textel1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 .bodyleft {
+   padding-top: 50px;
     float: left; 
     width: 50%; 
     height: 100%; 
     background-color: #ffffff;
    } 
-  
-
-  
-  
   .bodyright {
+    padding-top: 50px;
     float: right; 
     width: 50%; 
     height: 100%; 
     background-color: #ffffff; 
   }
-
+  .texter1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .avacado {
+    margin-top: 20px;
+    margin-bottom: 40px;
     width: 300px;
     height: auto;
     display: block ;
     margin-left: auto;
     margin-right: auto;
-    
-    
 }
 .shop {
     width: 300px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     height: auto;
     display: block ;
     margin-left: auto;
@@ -84,22 +287,28 @@ body {
 }
 .titlel2 a{
     color: rgb(66, 167, 76);
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-decoration: none;
     font-family:'Dancing Script', cursive;
 }
-
 .titlel3 a{
   color: rgb(66, 167, 76);
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-decoration: none;
   font-family:'Dancing Script', cursive;
 }
 .buy a{
   color: rgb(66, 167, 76);
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-decoration: none; 
   font-family:'Dancing Script', cursive;
 }
-
 .family {
+  margin-top: 20px;
+    margin-bottom: 40px;
     width: 300px;
     height: auto;
     display: block;
@@ -112,14 +321,17 @@ body {
   font-family:'Dancing Script', cursive;
 }
 .divider{
+  margin-top: 20px;
+    margin-bottom: 20px;
     width: 300px;
     height: auto;
     display: block ;
     margin-left: auto;
     margin-right: auto;
 }
-
 .cosmetique{
+  margin-top: 20px;
+    margin-bottom: 40px;
   width: 300px;
   height: auto;
   display: block ;
@@ -127,104 +339,7 @@ body {
   margin-right: auto;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #cddbba;
-  color: white;
-  min-height: 100px;
-  width: 100%;
-  margin-top: 20px;
-  max-width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-/*.footer {
-  color: white;
-  min-height: 100px;
-  bottom: 0;
-  width: 100%;
-  margin-top: 20px;
-  max-width: 100%;
-}*/
-
-.social {
-  text-align: center;
-  background-color: rgb(236, 236, 200);
-  padding-top: 25px;
-  color: darkgreen;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-.social a {
-  font-size: 24px;
-  color: inherit;
-  /* border: 1px solid olive; */
-  width: 50px;
-  height: 30px;
-  margin: 0 8px;
-  opacity: 0.75;
-}
-
-.social a:hover {
-  opacity: 0.9;
-}
-.footer p {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 15px;
-}
-
-/* Add these styles to your existing CSS */
-/*.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #cddbba;
-  color: white;
-  min-height: 100px;
-  bottom: 0;
-  width: 100%;
-  margin-top: 20px;
-  max-width: 100%;
-}
-
-.social {
-  text-align: center;
-  background-color: rgb(236, 236, 200);
-  padding-top: 25px;
-  color: darkgreen;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.social a {
-  font-size: 24px;
-  color: inherit;
-  /* border: 1px solid olive; 
-  width: 50px;
-  height: 30px;
-  margin: 0 8px;
-  opacity: 0.75;
-}
-
-.social a:hover {
-  opacity: 0.9;
-}
-
-/* Add this style to center the copyright text 
-.footer p {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 15px;
-}*/
-
-
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   .bodyleft,
   .bodyright {
     float: none; 
@@ -239,4 +354,44 @@ body {
   .bodyleft {
     margin-bottom: 20px;
   }
+}*/
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bodyleft,
+  .bodyright {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+  }
+
+  .bodyleft,
+  .bodyright {
+    text-align: center;
+  }
+
+  .bodyleft {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(221, 241, 174);
+    color: white;
+    min-height: 100px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }
+
+
+
