@@ -1,7 +1,8 @@
 body {
     margin: 20px;
     padding: 45px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Ysabeau Infant', sans-serif;
+ 
   }
   
   nav {
@@ -32,53 +33,40 @@ body {
   }
   
   nav ul li a:hover {
-    background-color: #555;
+    background-color: rgb(66, 167, 76);
+  }
+  .title1{
+    color: rgb(66, 167, 76);
+    font-family:'Ysabeau Infant', sans-serif;
+
+  }
+  .titlel1{
+    font-family:'Ysabeau Infant', sans-serif; 
   }
   
   main{
     height: 100%;
   }
   
-/* Define styles for the left half */
+
 .bodyleft {
-    float: left; /* Float the div to the left */
-    width: 50%; /* Set the width to half of the screen */
-    height: 100%; /* Cover the full height of the screen */
+    float: left; 
+    width: 50%; 
+    height: 100%; 
     background-color: #ffffff;
-   } /* Example background color, you can change this */
+   } 
   
 
-  .greenleft {
-    
-    width: 30%; /* Set the width to half of the screen */
-    height: 100%; /* Cover the full height of the screen */
-    background-color: #c2dbc0;
-    display: flex;
-    justify-content: center;
-    /*display: block ;
-    margin-left: auto;
-    margin-right: auto;*/
-   } /* Example background color, you can change this */
   
-  .greenright {
-    
-    width: 30%; /* Set the width to half of the screen */
-    height: 100%; /* Cover the full height of the screen */
-    background-color: #c2dbc0;
-    display: flex;
-    justify-content: center;
- 
-     }
   
   .bodyright {
-    float: right; /* Float the div to the right */
-    width: 50%; /* Set the width to half of the screen */
-    height: 100%; /* Cover the full height of the screen */
-    background-color: #ffffff; /* Example background color, you can change this */
+    float: right; 
+    width: 50%; 
+    height: 100%; 
+    background-color: #ffffff; 
   }
 
   .avacado {
-    /* Resize the image to 300px in width and 200px in height */
     width: 300px;
     height: auto;
     display: block ;
@@ -88,28 +76,41 @@ body {
     
 }
 .shop {
-    /* Resize the image to 300px in width and 200px in height */
     width: 300px;
     height: auto;
     display: block ;
     margin-left: auto;
     margin-right: auto;
 }
-.titler2{
-    color: rgb(36, 190, 57);
-
+.titlel2 a{
+    color: rgb(66, 167, 76);
+    text-decoration: none;
+    font-family:'Dancing Script', cursive;
 }
+
+.titlel3 a{
+  color: rgb(66, 167, 76);
+  text-decoration: none;
+  font-family:'Dancing Script', cursive;
+}
+.buy a{
+  color: rgb(66, 167, 76);
+  text-decoration: none; 
+  font-family:'Dancing Script', cursive;
+}
+
 .family {
-    /* Resize the image to 300px in width and 200px in height */
     width: 300px;
     height: auto;
-    display: block ;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
+.titler2 a{
+  color: rgb(66, 167, 76);
+  text-decoration: none;
+  font-family:'Dancing Script', cursive;
+}
 .divider{
     width: 300px;
     height: auto;
@@ -126,53 +127,116 @@ body {
   margin-right: auto;
 }
 
-.trolley {
-  width: 30px;
-  height: auto;
-  display: block ;
-  margin-left: auto;
-  margin-right: 100px;
-}
-
 .footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cddbba;
+  color: white;
+  min-height: 100px;
+  width: 100%;
+  margin-top: 20px;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/*.footer {
+  color: white;
+  min-height: 100px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  max-width: 100%;
+}*/
+
+.social {
   text-align: center;
-}
-
-.footer-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.footer-content p {
-  margin: 0;
-  align-items: flex-end;
-}
-
-.footer-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-content ul li {
-  display: inline-block;
-  margin-right: 15px;
-  align-items: flex-end;
-}
-
-.footer-content ul li:last-child {
-  margin-right: 0;
-}
-
-.footer-content ul li a {
-  color: #ccce6a;
-  text-decoration: none;
-}
-
-.footer-content ul li a:hover {
-  text-decoration: underline;
+  background-color: rgb(236, 236, 200);
+  padding-top: 25px;
+  color: darkgreen;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
+.social a {
+  font-size: 24px;
+  color: inherit;
+  /* border: 1px solid olive; */
+  width: 50px;
+  height: 30px;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.social a:hover {
+  opacity: 0.9;
+}
+.footer p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Add these styles to your existing CSS */
+/*.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cddbba;
+  color: white;
+  min-height: 100px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.social {
+  text-align: center;
+  background-color: rgb(236, 236, 200);
+  padding-top: 25px;
+  color: darkgreen;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.social a {
+  font-size: 24px;
+  color: inherit;
+  /* border: 1px solid olive; 
+  width: 50px;
+  height: 30px;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.social a:hover {
+  opacity: 0.9;
+}
+
+/* Add this style to center the copyright text 
+.footer p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 15px;
+}*/
+
+
+@media screen and (max-width: 768px) {
+  .bodyleft,
+  .bodyright {
+    float: none; 
+    width: 100%; 
+    height: auto; 
+    background-color: #ffffff;
+  }
+  .bodyleft,
+  .bodyright {
+    text-align: center;
+  }
+  .bodyleft {
+    margin-bottom: 20px;
+  }
+}
