@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WILD VEGAN</title>
+    <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="/assets/styles/shop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -19,15 +20,33 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Recettes</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Boutique</a></li>
-            <li><a href="#">Qui sommes-nous ?</a></li>
-        </ul>
-    </nav>
+    <header>
+        <!-- Navigation Menu -->
+        <div class="header">
+            <div class="header-left">
+                <img class="logo" src="assets/img/Logo.png" alt="Wild Vegan" />
+            </div>
+            <div class="header-right">
+
+                <ul class="list">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="recettes.html">RECETTES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="shop.html">BOUTIQUE</a></li>
+                    <li><a href="about.html">QUI SOMMES NOUS?</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+            </div>
+    </header>
 
     <h1>Soldes: Dernière démarque</h1>
 
@@ -130,7 +149,19 @@
         </div>
     </div>
 
-    <footer></footer>
+    <footer>
+        <div class="social">
+            <a href="#"> <i class="fab fa-facebook"> </i></a>
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+            <a href="#"> <i class="fab fa-youtube"></i></a>
+            <a href="#"> <i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <p class="copyright">
+                Copyright © 2023 wild vegan. tous droits réservés.
+            </p>
+
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
@@ -139,6 +170,8 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/assets/scripts/shop.js"></script>
+
+    <script src="assets/scripts/header.js"></script>
 
 </body>
 
