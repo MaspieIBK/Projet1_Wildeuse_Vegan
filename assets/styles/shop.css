@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -18,74 +18,79 @@ nav a {
     display: flex;
 }
 
-img {
-    max-width: 100%;
-}
-.slider-container {
-    max-width: 500px;
-    position: relative;
-    margin: auto;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 20px;
-}
-.menu {
-    position: absolute;
-    left: 0;
-    z-index: 11;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-}
-.menu label {
-    cursor: pointer;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 50px;
-    margin: 0 0.2em 1em;
-}
-.menu label:hover,.menu label:focus {
-    background: #10B85C;
-}
-.slide-input{
-    opacity: 0;
-}
-.slide-img {
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    z-index: 10;
-    transition: left 0s 0.75s;
-}
-[id^="slide"]:checked + .slide-img {
-    left: 0;
-    z-index: 100;
-    transition: left 0.65s ease-out;
+h1 {
+    color: solid black;
+    padding: 32px;
 }
 
-section h2 {
-    padding: 16px;
-    margin-top: 16px;
-    text-align: center;
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-section article {
+.card {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    background-color: #bcf7d7;
-    width: 40%;
-    padding: 8px;
-    margin: 0 8px 8px 0;
-    border-radius: 5px;
-    height: 100px;
-    box-shadow: 10px 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 40%;
+    min-height: 45rem;
+    text-align: center;
+    align-items: stretch;
+    justify-content: space-between;
+    font-family: arial;
+    margin-bottom: 2rem;
+  }
+
+  .img {
+    margin: 16px auto;
+    height: 200px;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+    
+  .article-img {
+    height: 20rem;
+  }
+
+  .price {
+    color: rgb(49, 158, 122);
+    font-size: 32px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: black;
+    background-color: rgb(49, 158, 122);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    
 }
 
-article:hover {
-    background-color: #10B85C;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+    
 }

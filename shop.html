@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles/shop.css">
     <title>WILD VEGAN</title>
-    <!-- n'apparait pas -->
+    <link rel="stylesheet" href="/assets/styles/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -15,41 +21,125 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">Accueil</a></li>
             <li><a href="#">Recettes</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Boutique</a></li>
             <li><a href="#">Qui sommes-nous ?</a></li>
         </ul>
     </nav>
-    <div class="slider-container">
-        <div class="menu">
-            <label for="slide-dot-1"></label>
-            <label for="slide-dot-2"></label>
-            <label for="slide-dot-3"></label>
-            <label for="slide-dot-4"></label>
-        </div>
-        <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-        <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide1.jpg">
 
-        <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-        <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide1.jpg">
+    <h1>Soldes: Dernière démarque</h1>
 
-        <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
-        <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide2.jpg">
-
-        <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
-        <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg">
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="/assets/img/diapo1.png"></div>
+        <div class="item"><img src="/assets/img/vuna.png"></div>
+        <div class="item"><img src="/assets/img/violife.png"></div>
+        <div class="item"><img src="/assets/img/mattandnat.png"></div>
+        <div class="item"><img src="/assets/img/typology.png"></div>
     </div>
-    <main>
-        <section>
-            <div id="flex-container">
-                <h2>Meilleures ventes</h2>
-                <div id="item-1">Bacon végétal</div>
-                <img class=""
+
+    <h1>Les bestsellers</h1>
+    <div class="cards">
+
+
+        <div class="card">
+            <div class="article-img">
+                <img src="/assets/img/bacon-lavie.jpg" alt="Bacon" style="width:100%">
             </div>
-        </section>
-    </main>
+            <h3>Bacon végétal fumé - 10 tranches La Vie - Fabrication française</h3>
+            <p class="price">4,29 €</p>
+            <h5>Prêt(e) à faire crépiter le bacon végétal fumé au bois de hêtre de La Vie ? Après son succès chez Burger
+                King et autres professionnels, il est enfin là pour garnir nos assiettes !</h5>
+           <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <div class="article-img">
+                <img src="/assets/img/chantilly.jpg" alt="Chantilly" style="width:100%">
+            </div>
+            <h3>Bombe de crème fouettée sucrée - 200ml - Sans soja, sans gluten Schlagfix</h3>
+            <p class="price">2,90 €</p>
+            <p>Gourmande, onctueuse et aérienne, cette préparation sucrée accompagnera parfaitement vos desserts.</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <div class="article-img">
+                <img src="/assets/img/chipolatas-happyvore.jpg" alt="Chipos" style="width:100%">
+            </div>
+            <h3>Chipos végétales aux herbes de Provence - x4 Happyvore - Fabrication française</h3>
+            <p class="price">5,85 €</p>
+            <p>A la poêle ou au barbecue, ces chipos Happyvore (anciennement "Les nouveaux fermiers") savoureuses et
+                parfumées aux herbes de Provence, séduiront tou le monde!</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <div class="article-img">
+                <img src="/assets/img/ethletic-sneackers.jpg" alt="Sneacker" style="width:100%">
+            </div>
+            <h3>Fair Sneacker Hiro 18 - Edition limitée Ethletic</h3>
+            <p class="price">69,93 €</p>
+            <p>L'indémodable paire de baskets montantes, faites de cuir végétale, de coton bio FAIRTRADE et de
+                caoutchouc naturel pour une mode éco-responsable.</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <div class="article-img">
+                <img src="/assets/img/sac-purity.webp" alt="sac-purity" style="width:100%">
+            </div>
+            <h3>Mini sac-à-dos BRAVESM - Gamme Purity - couleur Tarte Matt & Nat</h3>
+            <p class="price">57,50 €</p>
+            <p>Petit sac à dos pratique tendance et éthique ! La doublure et le revêtement extérieur sont fabriqués en
+                plastique recyclé. Tous les produits de la marque sont vegan, alors faites-vous plaisir !</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <div class="article-img">
+                <img src="/assets/img/typology-serum.JPG" alt="Serum" style="width:100%">
+            </div>
+            <h3>Complexe aux 3 pré+probiotiques - 15ml Typology. Paris</h3>
+            <p class="price">30,90 €</p>
+            <p>Rééquilibre l'écosystème cutanée pour prévenir l'apparition des imperfections et diminuer les rougeurs.
+                La peau est saine et le teint uniforme.</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <div class="article-img">
+                <img src="/assets/img/vernis-manucurist.webp" alt="Vernis-plum" style="width:100%">
+            </div>
+            <h3>Vernis à séchage rapide - couleur Victoria plum Manucurist Paris</h3>
+            <p class="price">14,00 €</p>
+            <p>Nuances de rose, de violet et de brun, Victoria Plum est divin. Vernis à ongles green, 9 free, vegan &
+                cruelty free ingrédients bio-sourcés jusqu'à 84% et made in France.</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <div class="article-img">
+                <img src="/assets/img/Ma-vie-vegetale.jpg" alt="Ma-vie-vegetale" style="width:100%">
+            </div>
+            <h3>Ma vie végétale - Livre 207 pages - OCCASION Marie Laforêt</h3>
+            <p class="price">14,90 €</p>
+            <p>Remettez du naturel dans votre quotidien ! Maison, bien-être, décoration, cuisine. </p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
     <footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/scripts/shop.js"></script>
+
 </body>
+
 </html>
