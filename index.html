@@ -5,50 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="/assets/styles/homepage.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital@1&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 
 </head>
 <body>
   
-  <nav>
-    <img src="/assets/img/project logo.jpg" alt="Logo" class="logo">
-    <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">Recettes</a></li>
-      <li><a href="#">Blogs</a></li>
-      <li><a href="#">Boutiques</a></li>
-      <li><a href="#">Qui sommes nous?</a></li>
-    </ul>
-  </nav>
-  
+  <header>
+    <!-- Navigation Menu -->
+    <div class="header">
+        <div class="header-left">
+            <img class="logo" src="assets/img/Logo.png" alt="Wild Vegan" />
+        </div>
+        <div class="header-right">
+
+            <ul class="list">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="recettes.html">RECETTES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="shop.html">BOUTIQUE</a></li>
+                <li><a href="about.html">QUI SOMMES NOUS?</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </div>
+        <div>
+          <hr color=rgb(8, 100, 69)>
+        </div>
+</header>
   <intro>
-  <h1 align="middle" class="title1">Vivons en paix, Soyons vegan,,,</h1>
+  <p align="middle" class="title1">Vivons en paix, Soyons vegan,,,</p>
   </intro>
   <main>
-    <div>
+    <div class="container">
     <div class="bodyleft" >
         <h2 align="middle" class="titlel1"> Un savoureux recueil de <br> délices culinaires inégalés.</h2>
         <img src="/assets/img/divider.jpg" alt="divider" class="divider">
         <img src="/assets/img/avacado.jpg" alt="avacado" class="avacado">
-        <p align="middle" class="title">Vous ne savez pas comment utiliser toute ces legumes d'été? <br>Ces <strong> recettes faciles </strong> à base de legumes sont la pour vous aider!<br> Elles comprenent des idées savoureuses pour le diner,<br>Le dessert et bien plus encore...</p>
+        <p align="middle" class="textel1">Vous ne savez pas comment utiliser toute <br>ces légumes d'été? Ces <strong> recettes faciles </strong> à base <br>de légumes sont la pour vous aider! Elles <br>comprennent des idées savoureuses pour le diner,<br>Le dessert et bien plus encore...</p>
         <h2 align="middle" class="titlel2">
-          <a href="about.html">Toutes les Recettes >></a>
+          <a href="recipes.html">Toutes les Recettes >></a>
         </h2>
         
         <img src="/assets/img/divider.jpg" alt="divider" class="divider">
-        <img src="/assets/img/shop.jpg" alt="shop" class="shop" align="middl  e">
+        <img src="/assets/img/shop.jpg" alt="shop" class="shop" align="middle"><span></span>
+        
         <p align="middle" class="title">Explorez notre <strong>boutique </strong> pour découvrir une <br>sélection exquise de produits de qualité. <br>Bienvenue dans notre univers de shopping.</p>
         <div class="greenleft">
          <h2 align="middle" class="titlel3">
-            <a href="about.html">Acheter ici >></a>
+            <a href="shop.html">Acheter ici >></a>
           </h2>
         </div>
 
@@ -59,16 +78,16 @@
         <h2 align="middle" class="title">Un blog de cuisine avec des <br>recettes fraiches et piquantes </h2>
         <img src="/assets/img/divider.jpg" alt="divider" class="divider">
         <img src="/assets/img/family.jpg" alt="family" class="family">
-        <p align="middle" class="title">Nous aimons manger,voyager,cuisiner et manger encore ! <br> Nous créons et photographions des recettes végetariennes <br>depuis notre maison de <strong>Wild School</strong>, tandis que nos chiots <br> shiba mangent les tiges de chou frisé qui tombent <br> sur le sol de la cuisine...</p>
+        <p align="middle" class="texter1">Nous aimons manger,voyager,cuisiner et <br>manger encore! Nous créons et photographions <br>des recettes végetariennes depuis notre maison<br> de <strong>Wild School</strong>, tandis que nos chiots shiba  <br> mangent les tiges de chou frisé qui tombent <br> sur le sol de la cuisine...</p>
         <h2 align="middle" class="titler2">
-          <a href="shop.html">Rejoignez-Nous >></a>
+          <a href="about.html">Rejoignez-Nous >></a>
         </h2>
         <img src="/assets/img/divider.jpg" alt="divider" class="divider">
         <img src="/assets/img/cosmetique.jpg" alt="cosmetique" class="cosmetique">
-        <p align="middle" class="title">Découvrez notre <strong>blog </strong>pour des articles captivants,<br> des recettes délicieuses, et bien plus encore ! <br>Plongez dans notre univers culinaire et restez informé <br>des dernières tendances et astuces passionnantes.</p>
+        <p align="middle" class="title">Découvrez notre <strong>blog </strong>pour des articles captivants,<br> des recettes délicieuses, et bien plus encore ! </p>
         <div class="greenright">
           <h2 align="middle" class="buy">
-            <a href="shop.html">Découvrez notre blog >></a>
+            <a href="blog.html".html">Découvrez notre blog >></a>
           </h2>
 
         </div>
@@ -79,45 +98,20 @@
     </div>
    
   </main>
-  <footer>
+  
+<footer class="footer">
     <div class="social">
-      <a href="#"> <i class="fab fa-facebook"> </i></a>
-      <a href="#"> <i class="fab fa-instagram"></i></a>
-      <a href="#"> <i class="fab fa-youtube"></i></a>
-      <a href="#"> <i class="fab fa-tiktok"></i></a>
-      <a href="#"><i class="fab fa-pinterest"></i></a>
-      <p class="copyright">
-              Copyright © 2023 wild vegan. tous droits réservés.
-      </p>
-  
+        <a href="#"> <i class="fab fa-facebook"> </i></a>
+        <a href="#"> <i class="fab fa-instagram"></i></a>
+        <a href="#"> <i class="fab fa-youtube"></i></a>
+        <a href="#"> <i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <p class="copyright">
+            Copyright © 2023 wild vegan. tous droits réservés.
+        </p>
     </div>
-  </footer>
-  
-  <script>
-    const carouselSlide = document.querySelector(".carousel-slide");
-    const images = document.querySelectorAll(".carousel-slide img");
-  
-    // Set initial position and width for the slide container
-    let slideIndex = 0;
-    const slideWidth = images[0].clientWidth;
-  
-    // Function to slide the images
-    function slideImages() {
-      carouselSlide.style.transition = "transform 0.3s ease-in-out";
-      carouselSlide.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
-    }
-  
-    // Function to handle automatic sliding (every 3 seconds)
-    function autoSlide() {
-      slideIndex = (slideIndex + 1) % images.length;
-      slideImages();
-    }
-  
-    // Start auto sliding
-    setInterval(autoSlide, 3000);
-  </script>
-   <!--<script src="/assets/scripts/carrousel.js"></script>-->
-
+</footer>
+   <script src="assets/scripts/header.js"></script>
 </body>
 </html>
 
