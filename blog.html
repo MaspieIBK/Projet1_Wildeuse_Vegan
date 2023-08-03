@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/blog.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Header</title>
+    <title>WILD VEGAN | Our Blog</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
 </head>
 
@@ -19,35 +20,143 @@
     <header>
         <!-- Navigation Menu -->
         <div class="header">
-            <div>
+            <div class="header-left">
                 <img class="logo" src="assets/img/Logo.png" alt="Wild Vegan" />
             </div>
             <div class="header-right">
-                <!-- <button type="submit">search</button> -->
-                <input class="search" type="search" placeholder="search ..." />
+
                 <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
-                <div class="header-right-up">
-                    <ul class="list">
-                        <li><a href=""> ACCUEIL</a></li>
-                        <li><a href="">RECETTES</a></li>
-                        <li><a href="">BLOG</a></li>
-                        <li><a href="">BOUTIQUE</a></li>
-                        <li><a href="">QUI SOMMES-NOUS?</a>
-                        </li>
-                    </ul>
+                <ul class="list">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="recipes.html">RECETTES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="shop.html">BOUTIQUE</a></li>
+                    <li><a href="about.html">QUI SOMMES NOUS?</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-            </div>
 
-        </div>
+            </div>
     </header>
     <div>
         <hr color=rgb(8, 100, 69)>
     </div>
+
+    <div class="blog-header">
+        <h2>OUR BLOG</h2>
+    </div>
+
+    <div class="wrapper">
+        <img class="img-blog" src="/assets/img/blog.jpg" alt="Cuisine">
+
+        <article class="img-info">
+            <h3>Cuisine,Lifestyle</h3>
+            <p>Qu’est-ce que le Vegan Lifestyle ?En devenant vegan, tout notre mode de vie, notre consommation, notre
+                quotidien va être amené à changer petit à petit.
+            </p>
+            <a href="404-pagenotfound.html">Read more</a><br>
+            <div class="posted-date">
+                <p>Othiel, le 28 juillet 2023</p>
+            </div>
+        </article>
+    </div>
+
+    <div class="wrapper">
+        <img class="img-blog" src="/assets/img/veganisme.jpg" alt=veganisme">
+
+        <article class="img-info">
+            <h3>Débuter le Véganisme</h3>
+            <p>Qu’est-ce que le Vegan Lifestyle ?En devenant vegan, tout notre mode de vie, notre consommation, notre
+                quotidien va être amené à changer petit à petit.
+            </p>
+            <a href="404-pagenotfound.html">Read more</a><br>
+            <div class="posted-date">
+                <p>Beebi, le 29 Janv 2023</p>
+            </div>
+        </article>
+    </div>
+
+    <div class="strike">
+        <h3>How to go Vegan</h3>
+    </div>
+    <div class="wrapper">
+        <img class="img-blog" src="/assets/img/howtovegan.png" alt="vegan">
+
+        <article class="img-info">
+
+            <p>ÊTES-VOUS PRÊT À COMMENCER VOTRE VOYAGE VÉGÉTALIEN ? COMMENCEZ ICI !Vous souhaitez devenir végétalien,
+                mais vous ne savez pas par où commencer ?Vous êtes peut-être un nouveau végétalien qui ne sait pas si
+                vous devez prendre des compléments alimentaires (vous devriez certainement le faire) ou comment préparer
+                un repas sain et nourrissant.Peut-être avez-vous besoin de conseils pour peaufiner le véganisme afin
+                qu'il soit moins compliqué et, plus important encore, plus réalisable à long terme.Vous n'êtes pas seul.
+                Je me suis moi aussi posé ce genre de questions.Apprenez comment passer à un régime végétalien
+                entièrement basé sur les plantes et nourrissant tout en conserva
+            </p>
+            <a href="404-pagenotfound.html">OUI ! JE SUIS PRÊT ! DONNEZ-MOI LE GUIDE !</a><br>
+
+        </article>
+
+    </div>
+    <div class="strike">
+        <h3>Nos Suggestions</h3>
+    </div>
+
+    <div class="livre">
+        <h2>Livres et Videos</h2>
+    </div>
+    <!-- GRID CONTAINER-->
+
+    <div class="grid">
+        <div class="col">
+            <h4>Livre</h4>
+            <img class="img-livre" src="/assets/img/Livre.png" alt="livre">
+            <br>
+            <a href="404-pagenotfound.html">Learn more</a>
+        </div>
+        <div class="col">
+            <h4>Livre</h4>
+            <img class="img-livre" src="/assets/img/livre1.jpg" alt="livre">
+            <br>
+            <a href="404-pagenotfound.html">Learn more</a>
+        </div>
+
+        <!-- <div class="col">
+            <h4>Video</h4>
+            <video width="100%" controls>
+                <source src="https://www.youtube.com/watch?v=OJxMsypwnqg&pp=ygUPdmVnYW4gYmxvZyBwYWdl">
+            </video>
+            <br>
+        </div> -->
+        <div class="col">
+            <h4>video</h4>
+            <iframe src="https://www.youtube.com/embed/hoToFOtUtmQ" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <a href="https://www.youtube.com/embed/hoToFOtUtmQ" target="_blank">Watch Now</a>
+
+
+        </div>
+        <div class="col">
+            <h4>video</h4>
+            <iframe src="https://www.youtube.com/embed/OJxMsypwnqg" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <a href="https://www.youtube.com/embed/OJxMsypwnqg" target="_blank">Watch Now</a>
+
+        </div>
+
+    </div>
+    <!-- END GRID CONTAINER-->
+
 
 
 
@@ -64,8 +173,9 @@
 
         </div>
     </footer>
-    <script src="assets/scripts/script.js"></script>
-</body>
 
+
+    <script src="assets/scripts/header.js"></script>
+</body>
 
 </html>
