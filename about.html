@@ -1,39 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WILD VEGAN</title>
     <link rel="stylesheet" href="assets/styles/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+
 
 
 </head>
+
 <body>
     <h1>about us</h1>
-    <div class="text-rectangle"> 
+     <div class="container">
 
-    <p>
-        
-        Nous sommes une équipe de développeuses web passionnées et engagées, réunies sous le nom de Wild Vegan. Sur notre site, nous vous proposons une variété incroyable de délicieuses recettes salées et pâtisseries entièrement véganes. Notre objectif est de vous inspirer à adopter une alimentation saine, respectueuse des animaux et de l'environnement.
+       <div> <img src="assets/img/girls-with-fruit.jpg" alt="des femmes vegan"> </div>
 
-    </p>
+        <div> <p class="bordered-text"> Nous sommes une équipe de développeuses web passionnées et engagées, réunies sous
+            le nom de Wild Vegan. Sur notre site, nous vous proposons une variété incroyable de délicieuses recettes
+            salées et pâtisseries entièrement véganes. Notre objectif est de vous inspirer à adopter une
+            alimentation saine, respectueuse des animaux et de l'environnement.
+        </p> 
     </div>
-    <p>
-        <img src="assets/img/girls-with-fruit.jpg" alt="des femmes vegan">
+     </div>
+    
+     <div class="image-container owl-carousel owl-theme">
+        <div> <img src="assets/img/cosmetique.jpg" alt="des femmes avec des produit cosmétiques">
+        </div>
+        <div> <img src="assets/img/vegan-dessert.jpg" alt="la patisserie">
+        </div>
+        <div> <img src="assets/img/hand-holding-tote-bag.jpg" alt="des sacs vegan">
+        </div>
+        <div> <img src="assets/img/vegan-bags.jpg" alt="vegan sac">
+        </div>
+        <div> <img src="assets/img/vegan-arrangement-with-food.jpg" alt="arrangement">
+        </div>
 
-    </p>
+
+    </div>
+
     <div class="ellipse-container">
         <div class="ellipse-text">
-            En plus des recettes alléchantes, nous mettons à votre disposition une sélection de cosmétiques végans de haute qualité, car nous croyons que prendre soin de soi doit se faire sans nuire aux animaux ni à notre planète.
+            En plus des recettes alléchantes, nous mettons à votre disposition une sélection de cosmétiques végans de
+            haute qualité, car nous croyons que prendre soin de soi doit se faire sans nuire aux animaux ni à notre
+            planète.
         </div>
         <div class="ellipse-text">
-            Chez Wilds, nous ne nous arrêtons pas là ! Notre boutique propose également des sacs végans, des vêtements végétariens et une gamme de produits alimentaires végétariens. Tout cela dans le but de faciliter votre transition vers un mode de vie plus conscient et respectueux.
+            Chez Wilds, nous ne nous arrêtons pas là ! Notre boutique propose également des sacs végans, des vêtements
+            végétariens et une gamme de produits alimentaires végétariens. Tout cela dans le but de faciliter votre
+            transition vers un mode de vie plus conscient et respectueux.
         </div>
         <div class="ellipse-text">
-            Rejoignez notre équipe dans cette aventure végane et découvrez une nouvelle façon de vivre, où le plaisir de déguster de savoureux plats se marie parfaitement avec le respect de la nature et de tous ses habitants.
+            Rejoignez notre équipe dans cette aventure végane et découvrez une nouvelle façon de vivre, où le plaisir de
+            déguster de savoureux plats se marie parfaitement avec le respect de la nature et de tous ses habitants.
         </div>
     </div>
+
+    <section class="page-section ">
+        <div class="nouvelle-lettre">
+            <h2 class="nouv-lettre"><span>merci</span> POUR S'ARRÊTER </h2>
+            <p>J'espère que vous trouverez quelque chose qui chatouille votre fantaisie ici. Si vous aimez ce que vous
+                voyez, inscrivez-vous à la liste de diffusion pour rester à jour avec tout mon contenu !</p>
+
+            <label for='input_1'>Name <span class="your_name"></span></label>
+            <input name='input_1' id='input_1' type='text' class='medium' placeholder='Name' aria-required="true"
+                aria-invalid="false" />
+
+            <label for='input_2'>Email <span class="your_name"></span></label>
+            <input name='input_2' id='input_2' type='text' class='medium' placeholder='Email' aria-required="true"
+                aria-invalid="false" />
+            </form>
+
+        </div>
+
+    </section>
+
     
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/scripts/about.js"></script>
+</body>
+
+</html>
