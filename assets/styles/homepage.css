@@ -1,7 +1,8 @@
 body {
     margin: 20px;
     padding: 45px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Ysabeau Infant', sans-serif;
+ 
   }
   
   nav {
@@ -36,7 +37,11 @@ body {
   }
   .title1{
     color: rgb(66, 167, 76);
+    font-family:'Ysabeau Infant', sans-serif;
 
+  }
+  .titlel1{
+    font-family:'Ysabeau Infant', sans-serif; 
   }
   
   main{
@@ -77,15 +82,21 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.titler2 a{
+.titlel2 a{
     color: rgb(66, 167, 76);
     text-decoration: none;
+    font-family:'Dancing Script', cursive;
+}
 
-
+.titlel3 a{
+  color: rgb(66, 167, 76);
+  text-decoration: none;
+  font-family:'Dancing Script', cursive;
 }
 .buy a{
   color: rgb(66, 167, 76);
-  text-decoration: none;
+  text-decoration: none; 
+  font-family:'Dancing Script', cursive;
 }
 
 .family {
@@ -95,7 +106,11 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
+.titler2 a{
+  color: rgb(66, 167, 76);
+  text-decoration: none;
+  font-family:'Dancing Script', cursive;
+}
 .divider{
     width: 300px;
     height: auto;
@@ -112,69 +127,103 @@ body {
   margin-right: auto;
 }
 
-/* Add these styles to your existing CSS */
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-slide {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: auto;
-}
-
 .footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cddbba;
+  color: white;
+  min-height: 100px;
+  width: 100%;
+  margin-top: 20px;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
-.footer-content {
-  max-width: 200px;
-  margin: auto;
+/*.footer {
+  color: white;
+  min-height: 100px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  max-width: 100%;
+}*/
+
+.social {
+  text-align: center;
+  background-color: rgb(236, 236, 200);
+  padding-top: 25px;
+  color: darkgreen;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.footer-content p {
-  max-width: 300px;
-  margin: 0;
-  align-items: flex-end;
+
+.social a {
+  font-size: 24px;
+  color: inherit;
+  /* border: 1px solid olive; */
+  width: 50px;
+  height: 30px;
+  margin: 0 8px;
+  opacity: 0.75;
 }
 
-.footer-content ul {
-  max-width: 150px;
-  list-style: none;
-  padding: 0;
+.social a:hover {
+  opacity: 0.9;
+}
+.footer p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 15px;
 }
 
-.footer-content ul li {
-  max-width: 200px;
-  display: inline-block;
-  margin-right: 150px;
-  align-items: flex-end;
+/* Add these styles to your existing CSS */
+/*.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cddbba;
+  color: white;
+  min-height: 100px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  max-width: 100%;
 }
 
-.footer-content ul li:last-child {
-  max-width: 200px;
-  margin-right: 0;
+.social {
+  text-align: center;
+  background-color: rgb(236, 236, 200);
+  padding-top: 25px;
+  color: darkgreen;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.footer-content ul li a {
-  max-width: 200px;
-  color: #ccce6a;
-  text-decoration: none;
+.social a {
+  font-size: 24px;
+  color: inherit;
+  /* border: 1px solid olive; 
+  width: 50px;
+  height: 30px;
+  margin: 0 8px;
+  opacity: 0.75;
 }
 
-.footer-content ul li a:hover {
-  max-width: 200px;
-  text-decoration: underline;
+.social a:hover {
+  opacity: 0.9;
 }
+
+/* Add this style to center the copyright text 
+.footer p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 15px;
+}*/
+
+
 @media screen and (max-width: 768px) {
   .bodyleft,
   .bodyright {
